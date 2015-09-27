@@ -169,7 +169,7 @@ predictions &lt;- predict(forestModel, newdata = testPC)
 
 # test set accuracy
 accuracy &lt;- sum(test$classe==predictions)/length(predictions)</code></pre>
-<p>We see similar performance in our test set as in our training set as expected. And thus expect a <code>{r} (1-accuracy)*100</code> misclassification rate.</p>
+<p>We see similar performance in our test set as in our training set as expected. And thus expect a 0.02 misclassification rate.</p>
 </div>
 <div id="submission" class="section level2">
 <h2>Submission</h2>

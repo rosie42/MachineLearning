@@ -93,7 +93,7 @@ predictions <- predict(forestModel, newdata = testPC)
 accuracy <- sum(test$classe==predictions)/length(predictions)
 ```
 
-We see similar performance in our test set as in our training set as expected.  And thus expect a `r 1-accuracy` misclassification rate.
+We see similar performance in our test set as in our training set as expected.  And thus expect a `r round(1-accuracy,2)` misclassification rate.
 
 ## Submission
 We extract the relevant variables from the submission set, apply the Pricipal Components transformation from the training set and predict the class labels using the random forest model.
